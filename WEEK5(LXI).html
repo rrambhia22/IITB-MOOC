@@ -1,0 +1,2556 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="/js/highcharts.js"></script>
+<script src="/js/modules/stock.js"></script>
+<script src="/js/modules/map.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<div id="container"></div>
+<script>
+.highcharts-tooltip h3 {
+    margin: 0.3em 0;
+}
+</script>
+
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'packedbubble',
+        height: '100%'
+    },
+    title: {
+        text: 'Week 5: Persistant Interactors and their Behaviour'
+    },
+    subtitle: {
+	text: 'The following graph contains data of the Persistant users within Week 5 of the LXI environment and the category of behaviour they fall into. '
+    },
+    tooltip: {
+        useHTML: true,
+        headerFormat: '<table>',
+        pointFormat: '<tr><th colspan="1"><h1>{point.name}</h1></th></tr>' +
+            '<tr><th>Frequency of the Persisant Interactor in Lxi:</th><td>{point.value}</td></tr>' +
+            '<tr><th>Count of Thread Starter:</th><td>{point.value1}</td></tr>' +
+            '<tr><th>Count of Blank:</th><td>{point.value2}</td></tr>',
+        footerFormat: '</table>',
+        followPointer: true
+
+    },
+    plotOptions: {
+        packedbubble: {
+            minSize: '20%',
+            maxSize: '100%',
+            zMin: 0,
+            zMax: 1000,
+            layoutAlgorithm: {
+                gravitationalConstant: 0.05,
+                splitSeries: true,
+                seriesInteraction: false,
+                dragBetweenSeries: true,
+                parentNodeLimit: true
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}',
+                filter: {
+                    property: 'y',
+                    operator: '>',
+                    value: 1
+                },
+                style: {
+                    color: 'black',
+                    textOutline: 'none',
+                    fontWeight: 'normal'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Thread Starter',
+        data: [
+   
+   
+   {
+      name: "227007",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211447",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224612",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211598",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "219905",
+      value: 5,
+      value1: 5,
+      value2: 0
+   },
+   {
+      name: "218056",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "212405",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "224446",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211534",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "222970",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "218815",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224358",
+      value: 6,
+      value1: 6,
+      value2: 0
+   },
+   {
+      name: "223648",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "226817",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "223599",
+      value: 5,
+      value1: 5,
+      value2: 0
+   },
+   {
+      name: "221641",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220296",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "218026",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "212936",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "225527",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "215811",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "220256",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "216101",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "224088",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224444",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "222678",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "223289",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "218185",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "226103",
+      value: 8,
+      value1: 8,
+      value2: 0
+   },
+   {
+      name: "218219",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "222538",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "223732",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "226351",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "222371",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220304",
+      value: 5,
+      value1: 5,
+      value2: 0
+   },
+   {
+      name: "225801",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "220217",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "213412",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "220872",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "221100",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "221237",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "217204",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "224104",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "215848",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "217438",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "211752",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "225740",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "211462",
+      value: 5,
+      value1: 5,
+      value2: 0
+   },
+   {
+      name: "222873",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "223424",
+      value: 6,
+      value1: 6,
+      value2: 0
+   },
+   {
+      name: "213800",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211511",
+      value: 8,
+      value1: 8,
+      value2: 0
+   },
+   {
+      name: "221118",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "217517",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "220836",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "223663",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211522",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "222843",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "223412",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "221184",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "222280",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224743",
+      value: 4,
+      value1: 4,
+      value2: 0
+   },
+   {
+      name: "217419",
+      value: 8,
+      value1: 8,
+      value2: 0
+   },
+   {
+      name: "217678",
+      value: 2,
+      value1: 2,
+      value2: 0
+   }
+
+]
+	},{
+	name:'Blank',
+	data:[
+        
+	
+
+   {
+      name: "224110",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "227267",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "221789",
+      value: 13,
+      value1: 0,
+      value2: 13
+   },
+   {
+      name: "221780",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "224141",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "221797",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "213475",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "211537",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "225297",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "220735",
+      value: 6,
+      value1: 0,
+      value2: 6
+   },
+   {
+      name: "204830",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "226042",
+      value: 9,
+      value1: 0,
+      value2: 9
+   },
+   {
+      name: "223402",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "224680",
+      value: 7,
+      value1: 0,
+      value2: 7
+   },
+   {
+      name: "221791",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "221802",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "221815",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "222566",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "221705",
+      value: 6,
+      value1: 0,
+      value2: 6
+   },
+   {
+      name: "225976",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "222511",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "224425",
+      value: 13,
+      value1: 0,
+      value2: 13
+   },
+   {
+      name: "222977",
+      value: 9,
+      value1: 0,
+      value2: 9
+   },
+   {
+      name: "219898",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "216893",
+      value: 8,
+      value1: 0,
+      value2: 8
+   },
+   {
+      name: "224561",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "211751",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "222795",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "222293",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "225827",
+      value: 7,
+      value1: 0,
+      value2: 7
+   },
+   {
+      name: "116990",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "226759",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "225070",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "224577",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "219631",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "212562",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "170552",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "218200",
+      value: 2,
+      value1: 0,
+      value2: 2
+   }
+
+
+
+]
+	}, {
+	name: 'Both',
+        data: [
+
+
+
+   {
+      name: "221794",
+      value: 71,
+      value1: 3,
+      value2: 68
+   },
+   {
+      name: "218165",
+      value: 24,
+      value1: 2,
+      value2: 22
+   },
+   {
+      name: "221266",
+      value: 6,
+      value1: 1,
+      value2: 5
+   },
+   {
+      name: "227084",
+      value: 27,
+      value1: 3,
+      value2: 24
+   },
+   {
+      name: "224365",
+      value: 20,
+      value1: 4,
+      value2: 16
+   },
+   {
+      name: "222749",
+      value: 12,
+      value1: 2,
+      value2: 10
+   },
+   {
+      name: "217538",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "222963",
+      value: 37,
+      value1: 5,
+      value2: 32
+   },
+   {
+      name: "223900",
+      value: 66,
+      value1: 4,
+      value2: 62
+   },
+   {
+      name: "224423",
+      value: 12,
+      value1: 3,
+      value2: 9
+   },
+   {
+      name: "212367",
+      value: 22,
+      value1: 3,
+      value2: 19
+   },
+   {
+      name: "217530",
+      value: 16,
+      value1: 2,
+      value2: 14
+   },
+   {
+      name: "215191",
+      value: 25,
+      value1: 7,
+      value2: 18
+   },
+   {
+      name: "223853",
+      value: 23,
+      value1: 2,
+      value2: 21
+   },
+   {
+      name: "225404",
+      value: 22,
+      value1: 2,
+      value2: 20
+   },
+   {
+      name: "220701",
+      value: 13,
+      value1: 5,
+      value2: 8
+   },
+   {
+      name: "212503",
+      value: 16,
+      value1: 4,
+      value2: 12
+   },
+   {
+      name: "214264",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "225181",
+      value: 25,
+      value1: 3,
+      value2: 22
+   },
+   {
+      name: "219522",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "214966",
+      value: 13,
+      value1: 5,
+      value2: 8
+   },
+   {
+      name: "218250",
+      value: 30,
+      value1: 6,
+      value2: 24
+   },
+   {
+      name: "227377",
+      value: 59,
+      value1: 4,
+      value2: 55
+   },
+   {
+      name: "225690",
+      value: 12,
+      value1: 1,
+      value2: 11
+   },
+   {
+      name: "225926",
+      value: 40,
+      value1: 3,
+      value2: 37
+   },
+   {
+      name: "226227",
+      value: 12,
+      value1: 2,
+      value2: 10
+   },
+   {
+      name: "216882",
+      value: 15,
+      value1: 9,
+      value2: 6
+   },
+   {
+      name: "218289",
+      value: 7,
+      value1: 3,
+      value2: 4
+   },
+   {
+      name: "220382",
+      value: 13,
+      value1: 3,
+      value2: 10
+   },
+   {
+      name: "211611",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "211690",
+      value: 9,
+      value1: 7,
+      value2: 2
+   },
+   {
+      name: "226967",
+      value: 21,
+      value1: 2,
+      value2: 19
+   },
+   {
+      name: "215216",
+      value: 14,
+      value1: 4,
+      value2: 10
+   },
+   {
+      name: "223080",
+      value: 30,
+      value1: 9,
+      value2: 21
+   },
+   {
+      name: "217336",
+      value: 12,
+      value1: 1,
+      value2: 11
+   },
+   {
+      name: "219538",
+      value: 19,
+      value1: 3,
+      value2: 16
+   },
+   {
+      name: "217573",
+      value: 21,
+      value1: 6,
+      value2: 15
+   },
+   {
+      name: "211741",
+      value: 23,
+      value1: 10,
+      value2: 13
+   },
+   {
+      name: "222582",
+      value: 25,
+      value1: 2,
+      value2: 23
+   },
+   {
+      name: "215965",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "211781",
+      value: 27,
+      value1: 4,
+      value2: 23
+   },
+   {
+      name: "221838",
+      value: 18,
+      value1: 1,
+      value2: 17
+   },
+   {
+      name: "216622",
+      value: 13,
+      value1: 3,
+      value2: 10
+   },
+   {
+      name: "221739",
+      value: 19,
+      value1: 1,
+      value2: 18
+   },
+   {
+      name: "217171",
+      value: 7,
+      value1: 4,
+      value2: 3
+   },
+   {
+      name: "221757",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "215830",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "221281",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "217418",
+      value: 30,
+      value1: 11,
+      value2: 19
+   },
+   {
+      name: "213336",
+      value: 16,
+      value1: 10,
+      value2: 6
+   },
+   {
+      name: "216191",
+      value: 33,
+      value1: 6,
+      value2: 27
+   },
+   {
+      name: "224645",
+      value: 7,
+      value1: 6,
+      value2: 1
+   },
+   {
+      name: "222567",
+      value: 15,
+      value1: 2,
+      value2: 13
+   },
+   {
+      name: "227078",
+      value: 4,
+      value1: 3,
+      value2: 1
+   },
+   {
+      name: "216792",
+      value: 24,
+      value1: 2,
+      value2: 22
+   },
+   {
+      name: "223952",
+      value: 13,
+      value1: 4,
+      value2: 9
+   },
+   {
+      name: "219164",
+      value: 36,
+      value1: 2,
+      value2: 34
+   },
+   {
+      name: "225503",
+      value: 58,
+      value1: 8,
+      value2: 50
+   },
+   {
+      name: "219505",
+      value: 24,
+      value1: 4,
+      value2: 20
+   },
+   {
+      name: "211421",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "225997",
+      value: 34,
+      value1: 7,
+      value2: 27
+   },
+   {
+      name: "224432",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "219850",
+      value: 46,
+      value1: 4,
+      value2: 42
+   },
+   {
+      name: "219477",
+      value: 26,
+      value1: 3,
+      value2: 23
+   },
+   {
+      name: "222209",
+      value: 36,
+      value1: 3,
+      value2: 33
+   },
+   {
+      name: "224382",
+      value: 6,
+      value1: 3,
+      value2: 3
+   },
+   {
+      name: "224066",
+      value: 13,
+      value1: 1,
+      value2: 12
+   },
+   {
+      name: "216631",
+      value: 6,
+      value1: 5,
+      value2: 1
+   },
+   {
+      name: "223019",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "226798",
+      value: 14,
+      value1: 3,
+      value2: 11
+   },
+   {
+      name: "220167",
+      value: 7,
+      value1: 2,
+      value2: 5
+   },
+   {
+      name: "212798",
+      value: 16,
+      value1: 2,
+      value2: 14
+   },
+   {
+      name: "217853",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "223493",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "225130",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "216518",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "213553",
+      value: 10,
+      value1: 1,
+      value2: 9
+   },
+   {
+      name: "223549",
+      value: 10,
+      value1: 1,
+      value2: 9
+   },
+   {
+      name: "216659",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "222785",
+      value: 8,
+      value1: 1,
+      value2: 7
+   },
+   {
+      name: "215948",
+      value: 53,
+      value1: 2,
+      value2: 51
+   },
+   {
+      name: "225975",
+      value: 15,
+      value1: 5,
+      value2: 10
+   },
+   {
+      name: "221084",
+      value: 16,
+      value1: 4,
+      value2: 12
+   },
+   {
+      name: "223763",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "223212",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "216694",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "211555",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "219653",
+      value: 13,
+      value1: 7,
+      value2: 6
+   },
+   {
+      name: "223174",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "225442",
+      value: 7,
+      value1: 4,
+      value2: 3
+   },
+   {
+      name: "221889",
+      value: 12,
+      value1: 9,
+      value2: 3
+   },
+   {
+      name: "218108",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "222760",
+      value: 12,
+      value1: 2,
+      value2: 10
+   },
+   {
+      name: "224609",
+      value: 20,
+      value1: 8,
+      value2: 12
+   },
+   {
+      name: "222042",
+      value: 74,
+      value1: 3,
+      value2: 71
+   },
+   {
+      name: "222846",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "221104",
+      value: 11,
+      value1: 3,
+      value2: 8
+   },
+   {
+      name: "213360",
+      value: 32,
+      value1: 2,
+      value2: 30
+   },
+   {
+      name: "216187",
+      value: 39,
+      value1: 2,
+      value2: 37
+   },
+   {
+      name: "220959",
+      value: 30,
+      value1: 2,
+      value2: 28
+   },
+   {
+      name: "221062",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "225517",
+      value: 11,
+      value1: 2,
+      value2: 9
+   },
+   {
+      name: "218002",
+      value: 6,
+      value1: 1,
+      value2: 5
+   },
+   {
+      name: "224061",
+      value: 23,
+      value1: 3,
+      value2: 20
+   },
+   {
+      name: "219718",
+      value: 21,
+      value1: 3,
+      value2: 18
+   },
+   {
+      name: "221974",
+      value: 34,
+      value1: 2,
+      value2: 32
+   },
+   {
+      name: "221378",
+      value: 6,
+      value1: 3,
+      value2: 3
+   },
+   {
+      name: "221964",
+      value: 4,
+      value1: 3,
+      value2: 1
+   },
+   {
+      name: "222755",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "219454",
+      value: 13,
+      value1: 1,
+      value2: 12
+   },
+   {
+      name: "222426",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "225798",
+      value: 35,
+      value1: 3,
+      value2: 32
+   },
+   {
+      name: "224668",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "216431",
+      value: 33,
+      value1: 1,
+      value2: 32
+   },
+   {
+      name: "223728",
+      value: 15,
+      value1: 2,
+      value2: 13
+   },
+   {
+      name: "220135",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "213271",
+      value: 42,
+      value1: 3,
+      value2: 39
+   },
+   {
+      name: "223649",
+      value: 7,
+      value1: 1,
+      value2: 6
+   },
+   {
+      name: "217971",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "221234",
+      value: 11,
+      value1: 1,
+      value2: 10
+   },
+   {
+      name: "224691",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "226212",
+      value: 20,
+      value1: 2,
+      value2: 18
+   },
+   {
+      name: "225376",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "224673",
+      value: 27,
+      value1: 3,
+      value2: 24
+   },
+   {
+      name: "221238",
+      value: 13,
+      value1: 4,
+      value2: 9
+   },
+   {
+      name: "225696",
+      value: 6,
+      value1: 1,
+      value2: 5
+   },
+   {
+      name: "223901",
+      value: 7,
+      value1: 1,
+      value2: 6
+   },
+   {
+      name: "225694",
+      value: 7,
+      value1: 1,
+      value2: 6
+   },
+   {
+      name: "220109",
+      value: 29,
+      value1: 3,
+      value2: 26
+   },
+   {
+      name: "223664",
+      value: 16,
+      value1: 4,
+      value2: 12
+   },
+   {
+      name: "224005",
+      value: 9,
+      value1: 4,
+      value2: 5
+   },
+   {
+      name: "221236",
+      value: 8,
+      value1: 1,
+      value2: 7
+   },
+   {
+      name: "213570",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "224712",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "224198",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "221241",
+      value: 8,
+      value1: 1,
+      value2: 7
+   },
+   {
+      name: "213999",
+      value: 17,
+      value1: 5,
+      value2: 12
+   },
+   {
+      name: "224597",
+      value: 8,
+      value1: 3,
+      value2: 5
+   },
+   {
+      name: "211438",
+      value: 6,
+      value1: 5,
+      value2: 1
+   },
+   {
+      name: "221865",
+      value: 16,
+      value1: 2,
+      value2: 14
+   },
+   {
+      name: "223281",
+      value: 10,
+      value1: 4,
+      value2: 6
+   },
+   {
+      name: "226008",
+      value: 8,
+      value1: 4,
+      value2: 4
+   },
+   {
+      name: "219939",
+      value: 9,
+      value1: 3,
+      value2: 6
+   },
+   {
+      name: "218786",
+      value: 7,
+      value1: 2,
+      value2: 5
+   },
+   {
+      name: "215471",
+      value: 9,
+      value1: 5,
+      value2: 4
+   },
+   {
+      name: "219402",
+      value: 10,
+      value1: 3,
+      value2: 7
+   },
+   {
+      name: "213048",
+      value: 9,
+      value1: 5,
+      value2: 4
+   },
+   {
+      name: "219436",
+      value: 8,
+      value1: 3,
+      value2: 5
+   },
+   {
+      name: "219393",
+      value: 10,
+      value1: 4,
+      value2: 6
+   },
+   {
+      name: "214826",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "213817",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "213810",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "211459",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "212033",
+      value: 7,
+      value1: 1,
+      value2: 6
+   },
+   {
+      name: "212328",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "225805",
+      value: 24,
+      value1: 3,
+      value2: 21
+   },
+   {
+      name: "218009",
+      value: 12,
+      value1: 2,
+      value2: 10
+   },
+   {
+      name: "225826",
+      value: 73,
+      value1: 2,
+      value2: 71
+   },
+   {
+      name: "214644",
+      value: 9,
+      value1: 3,
+      value2: 6
+   },
+   {
+      name: "223011",
+      value: 20,
+      value1: 5,
+      value2: 15
+   },
+   {
+      name: "227097",
+      value: 61,
+      value1: 9,
+      value2: 52
+   },
+   {
+      name: "216205",
+      value: 24,
+      value1: 8,
+      value2: 16
+   },
+   {
+      name: "214147",
+      value: 7,
+      value1: 4,
+      value2: 3
+   },
+   {
+      name: "226254",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "224000",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "227183",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "224006",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "223894",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "226483",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "221017",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "224540",
+      value: 15,
+      value1: 8,
+      value2: 7
+   },
+   {
+      name: "227338",
+      value: 21,
+      value1: 5,
+      value2: 16
+   },
+   {
+      name: "227056",
+      value: 20,
+      value1: 3,
+      value2: 17
+   },
+   {
+      name: "215874",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "222983",
+      value: 20,
+      value1: 9,
+      value2: 11
+   },
+   {
+      name: "217653",
+      value: 13,
+      value1: 5,
+      value2: 8
+   },
+   {
+      name: "224185",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "215532",
+      value: 26,
+      value1: 4,
+      value2: 22
+   },
+   {
+      name: "227266",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "217097",
+      value: 43,
+      value1: 3,
+      value2: 40
+   },
+   {
+      name: "223924",
+      value: 7,
+      value1: 2,
+      value2: 5
+   },
+   {
+      name: "221283",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "227069",
+      value: 12,
+      value1: 3,
+      value2: 9
+   },
+   {
+      name: "221245",
+      value: 7,
+      value1: 2,
+      value2: 5
+   },
+   {
+      name: "215815",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "221244",
+      value: 8,
+      value1: 1,
+      value2: 7
+   },
+   {
+      name: "220594",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "214272",
+      value: 24,
+      value1: 9,
+      value2: 15
+   },
+   {
+      name: "225792",
+      value: 9,
+      value1: 5,
+      value2: 4
+   },
+   {
+      name: "218060",
+      value: 16,
+      value1: 2,
+      value2: 14
+   },
+   {
+      name: "221275",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "14949",
+      value: 9,
+      value1: 6,
+      value2: 3
+   },
+   {
+      name: "213365",
+      value: 5,
+      value1: 4,
+      value2: 1
+   },
+   {
+      name: "224381",
+      value: 11,
+      value1: 3,
+      value2: 8
+   },
+   {
+      name: "225040",
+      value: 6,
+      value1: 3,
+      value2: 3
+   },
+   {
+      name: "216750",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "215221",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "224397",
+      value: 5,
+      value1: 4,
+      value2: 1
+   },
+   {
+      name: "222377",
+      value: 9,
+      value1: 7,
+      value2: 2
+   },
+   {
+      name: "221259",
+      value: 16,
+      value1: 1,
+      value2: 15
+   },
+   {
+      name: "227018",
+      value: 25,
+      value1: 7,
+      value2: 18
+   },
+   {
+      name: "219375",
+      value: 31,
+      value1: 4,
+      value2: 27
+   },
+   {
+      name: "216547",
+      value: 26,
+      value1: 3,
+      value2: 23
+   },
+   {
+      name: "211483",
+      value: 52,
+      value1: 2,
+      value2: 50
+   },
+   {
+      name: "226844",
+      value: 4,
+      value1: 3,
+      value2: 1
+   },
+   {
+      name: "220127",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "214241",
+      value: 29,
+      value1: 2,
+      value2: 27
+   },
+   {
+      name: "223915",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "212472",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "225728",
+      value: 9,
+      value1: 6,
+      value2: 3
+   },
+   {
+      name: "217174",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "224499",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "222949",
+      value: 30,
+      value1: 4,
+      value2: 26
+   },
+   {
+      name: "216174",
+      value: 27,
+      value1: 6,
+      value2: 21
+   },
+   {
+      name: "222037",
+      value: 23,
+      value1: 2,
+      value2: 21
+   },
+   {
+      name: "224767",
+      value: 9,
+      value1: 4,
+      value2: 5
+   },
+   {
+      name: "224079",
+      value: 8,
+      value1: 3,
+      value2: 5
+   },
+   {
+      name: "224572",
+      value: 14,
+      value1: 2,
+      value2: 12
+   },
+   {
+      name: "224524",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "217987",
+      value: 9,
+      value1: 5,
+      value2: 4
+   },
+   {
+      name: "212527",
+      value: 31,
+      value1: 2,
+      value2: 29
+   },
+   {
+      name: "217575",
+      value: 4,
+      value1: 3,
+      value2: 1
+   },
+   {
+      name: "222720",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "219973",
+      value: 26,
+      value1: 4,
+      value2: 22
+   },
+   {
+      name: "220152",
+      value: 15,
+      value1: 4,
+      value2: 11
+   },
+   {
+      name: "220805",
+      value: 11,
+      value1: 2,
+      value2: 9
+   },
+   {
+      name: "219517",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "227152",
+      value: 11,
+      value1: 6,
+      value2: 5
+   },
+   {
+      name: "220115",
+      value: 30,
+      value1: 2,
+      value2: 28
+   },
+   {
+      name: "219468",
+      value: 12,
+      value1: 1,
+      value2: 11
+   },
+   {
+      name: "213596",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "215437",
+      value: 10,
+      value1: 5,
+      value2: 5
+   },
+   {
+      name: "212876",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "211540",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "211758",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "223882",
+      value: 6,
+      value1: 5,
+      value2: 1
+   },
+   {
+      name: "212136",
+      value: 13,
+      value1: 5,
+      value2: 8
+   },
+   {
+      name: "227033",
+      value: 9,
+      value1: 6,
+      value2: 3
+   },
+   {
+      name: "215945",
+      value: 10,
+      value1: 2,
+      value2: 8
+   },
+   {
+      name: "223762",
+      value: 14,
+      value1: 5,
+      value2: 9
+   },
+   {
+      name: "218097",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "219334",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "219618",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "219480",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "213667",
+      value: 8,
+      value1: 2,
+      value2: 6
+   },
+   {
+      name: "215836",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "222880",
+      value: 10,
+      value1: 5,
+      value2: 5
+   },
+   {
+      name: "219424",
+      value: 14,
+      value1: 6,
+      value2: 8
+   },
+   {
+      name: "219446",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "222959",
+      value: 8,
+      value1: 3,
+      value2: 5
+   },
+   {
+      name: "224063",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "224815",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "217072",
+      value: 5,
+      value1: 4,
+      value2: 1
+   },
+   {
+      name: "227133",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "219398",
+      value: 18,
+      value1: 6,
+      value2: 12
+   },
+   {
+      name: "224001",
+      value: 8,
+      value1: 7,
+      value2: 1
+   },
+   {
+      name: "217954",
+      value: 16,
+      value1: 7,
+      value2: 9
+   },
+   {
+      name: "222279",
+      value: 14,
+      value1: 1,
+      value2: 13
+   },
+   {
+      name: "220560",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "222818",
+      value: 6,
+      value1: 3,
+      value2: 3
+   },
+   {
+      name: "223337",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "223797",
+      value: 12,
+      value1: 7,
+      value2: 5
+   },
+   {
+      name: "217766",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "221897",
+      value: 6,
+      value1: 1,
+      value2: 5
+   },
+   {
+      name: "221914",
+      value: 16,
+      value1: 5,
+      value2: 11
+   },
+   {
+      name: "218699",
+      value: 20,
+      value1: 2,
+      value2: 18
+   },
+   {
+      name: "221901",
+      value: 18,
+      value1: 4,
+      value2: 14
+   },
+   {
+      name: "223781",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "220226",
+      value: 7,
+      value1: 6,
+      value2: 1
+   },
+   {
+      name: "112284",
+      value: 32,
+      value1: 7,
+      value2: 25
+   },
+   {
+      name: "215416",
+      value: 9,
+      value1: 2,
+      value2: 7
+   },
+   {
+      name: "222116",
+      value: 9,
+      value1: 5,
+      value2: 4
+   },
+   {
+      name: "225881",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "223891",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "212968",
+      value: 49,
+      value1: 3,
+      value2: 46
+   },
+   {
+      name: "216108",
+      value: 11,
+      value1: 4,
+      value2: 7
+   },
+   {
+      name: "225149",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "213926",
+      value: 24,
+      value1: 3,
+      value2: 21
+   },
+   {
+      name: "218776",
+      value: 7,
+      value1: 4,
+      value2: 3
+   },
+   {
+      name: "219561",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "220015",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "223069",
+      value: 22,
+      value1: 2,
+      value2: 20
+   },
+   {
+      name: "223294",
+      value: 7,
+      value1: 1,
+      value2: 6
+   },
+   {
+      name: "213753",
+      value: 9,
+      value1: 1,
+      value2: 8
+   },
+   {
+      name: "221229",
+      value: 6,
+      value1: 1,
+      value2: 5
+   },
+   {
+      name: "223914",
+      value: 14,
+      value1: 3,
+      value2: 11
+   },
+   {
+      name: "224286",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "222778",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "223407",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "225549",
+      value: 34,
+      value1: 5,
+      value2: 29
+   },
+   {
+      name: "223553",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "224073",
+      value: 16,
+      value1: 7,
+      value2: 9
+   },
+   {
+      name: "226230",
+      value: 7,
+      value1: 2,
+      value2: 5
+   },
+   {
+      name: "213202",
+      value: 6,
+      value1: 4,
+      value2: 2
+   },
+   {
+      name: "223806",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "224054",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "211507",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "216797",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "227398",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "217992",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "218256",
+      value: 7,
+      value1: 3,
+      value2: 4
+   },
+   {
+      name: "223925",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "220236",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "212149",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "217901",
+      value: 5,
+      value1: 2,
+      value2: 3
+   },
+   {
+      name: "216324",
+      value: 2,
+      value1: 1,
+      value2: 1
+   }
+
+]
+}]
+});
+
+</script>
+
+<script>
+#container {
+	min-width: 320px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+</script>

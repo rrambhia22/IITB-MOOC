@@ -1,0 +1,644 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="/js/highcharts.js"></script>
+<script src="/js/modules/stock.js"></script>
+<script src="/js/modules/map.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<div id="container"></div>
+<script>
+.highcharts-tooltip h3 {
+    margin: 0.3em 0;
+}
+</script>
+
+<script>
+Highcharts.chart('container', {
+    chart: {
+        type: 'packedbubble',
+        height: '100%'
+    },
+    title: {
+        text: 'Week 5: Persistant Interactors and their Behaviour'
+    },
+    subtitle: {
+	text: 'The following graph contains data of the Persistant users within Week 5 of the NON-LXI environment and the category of behaviour they fall into. '
+    },
+    tooltip: {
+        useHTML: true,
+        headerFormat: '<table>',
+        pointFormat: '<tr><th colspan="1"><h1>{point.name}</h1></th></tr>' +
+            '<tr><th>Frequency of the Persisant Interactor in Non-Lxi:</th><td>{point.value}</td></tr>' +
+            '<tr><th>Count of Thread Starter:</th><td>{point.value1}</td></tr>' +
+            '<tr><th>Count of Commenters:</th><td>{point.value2}</td></tr>',
+        footerFormat: '</table>',
+        followPointer: true
+
+    },
+    plotOptions: {
+        packedbubble: {
+            minSize: '20%',
+            maxSize: '100%',
+            zMin: 0,
+            zMax: 1000,
+            layoutAlgorithm: {
+                gravitationalConstant: 0.05,
+                splitSeries: true,
+                seriesInteraction: false,
+                dragBetweenSeries: true,
+                parentNodeLimit: true
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}',
+                filter: {
+                    property: 'y',
+                    operator: '>',
+                    value: 1
+                },
+                style: {
+                    color: 'black',
+                    textOutline: 'none',
+                    fontWeight: 'normal'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Thread Comment',
+        data: [
+   
+  
+   {
+      name: "222963",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "217530",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "215191",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220701",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "218289",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211741",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224446",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "221889",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "221974",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "223901",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "211438",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "223599",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "221641",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "215811",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "227338",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "215874",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "224185",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "215342",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "216750",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "222977",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "214115",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "217987",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220152",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "224561",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "226236",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "224001",
+      value: 3,
+      value1: 3,
+      value2: 0
+   },
+   {
+      name: "220560",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "221914",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "222379",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220015",
+      value: 2,
+      value1: 2,
+      value2: 0
+   },
+   {
+      name: "220025",
+      value: 2,
+      value1: 2,
+      value2: 0
+   }
+
+
+
+]
+    }, {
+	name: 'Comment',
+        data: [
+
+   
+   
+   
+
+   {
+      name: "224365",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "212503",
+      value: 5,
+      value1: 0,
+      value2: 5
+   },
+   {
+      name: "218250",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "216191",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "212798",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "220735",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "213271",
+      value: 6,
+      value1: 0,
+      value2: 6
+   },
+   {
+      name: "223664",
+      value: 5,
+      value1: 0,
+      value2: 5
+   },
+   {
+      name: "224712",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "223011",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "227097",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "221705",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "216547",
+      value: 4,
+      value1: 0,
+      value2: 4
+   },
+   {
+      name: "214241",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "216174",
+      value: 8,
+      value1: 0,
+      value2: 8
+   },
+   {
+      name: "212527",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "219468",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "212136",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "227033",
+      value: 3,
+      value1: 0,
+      value2: 3
+   },
+   {
+      name: "219983",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "222959",
+      value: 2,
+      value1: 0,
+      value2: 2
+   },
+   {
+      name: "212968",
+      value: 11,
+      value1: 0,
+      value2: 11
+   },
+   {
+      name: "213926",
+      value: 4,
+      value1: 0,
+      value2: 4
+   }
+
+
+]
+	}, {
+	name: 'Both',
+        data: [
+
+
+   {
+      name: "223900",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "225181",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "227377",
+      value: 6,
+      value1: 2,
+      value2: 4
+   },
+   {
+      name: "211611",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "217573",
+      value: 3,
+      value1: 2,
+      value2: 1
+   },
+   {
+      name: "222582",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "215965",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "211781",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "221281",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "225503",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "225997",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "219850",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "216631",
+      value: 4,
+      value1: 3,
+      value2: 1
+   },
+   {
+      name: "223019",
+      value: 4,
+      value1: 1,
+      value2: 3
+   },
+   {
+      name: "226042",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "224061",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "216205",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "226483",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "221626",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "211552",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "220594",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "214272",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "225792",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "218060",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "227018",
+      value: 4,
+      value1: 2,
+      value2: 2
+   },
+   {
+      name: "219375",
+      value: 3,
+      value1: 1,
+      value2: 2
+   },
+   {
+      name: "217174",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "222037",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "220115",
+      value: 5,
+      value1: 1,
+      value2: 4
+   },
+   {
+      name: "223762",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "112284",
+      value: 13,
+      value1: 1,
+      value2: 12
+   },
+   {
+      name: "222116",
+      value: 6,
+      value1: 5,
+      value2: 1
+   },
+   {
+      name: "225549",
+      value: 5,
+      value1: 3,
+      value2: 2
+   },
+   {
+      name: "219512",
+      value: 2,
+      value1: 1,
+      value2: 1
+   },
+   {
+      name: "223991",
+      value: 3,
+      value1: 2,
+      value2: 1
+   }
+
+]
+}]
+});
+
+</script>
+
+<script>
+#container {
+	min-width: 320px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+</script>
